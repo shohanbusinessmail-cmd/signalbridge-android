@@ -1,0 +1,9 @@
+<resources>
+    <!-- Application theme used by the launcher activity. The rich Material 3
+         theme is applied programmatically in setContent via SignalBridgeTheme. -->
+    <style name="AppTheme" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/surface_background</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+</resources>

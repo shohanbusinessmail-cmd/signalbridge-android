@@ -1,0 +1,40 @@
+*.apk
+*.aab
+
+# Built application files
+*.apk
+*.aab
+
+# Gradle files
+.gradle/
+build/
+
+# Local configuration file (sdk path, etc.)
+local.properties
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+
+# Keystores / signing secrets - NEVER commit these
+*.jks
+*.keystore
+*.key
+*.pk8
+*.pem
+
+# Logs
+*.log
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+
+# Signing configs
+**/signing-config*.json
