@@ -1,0 +1,246 @@
+<resources>
+    <!-- App identity -->
+    <string name="app_name">SignalBridge</string>
+
+    <!-- Splash -->
+    <string name="splash_tagline">Your calls, always connected.</string>
+    <string name="initialization_failed">Initialization failed</string>
+    <string name="retry">Retry</string>
+
+    <!-- Welcome / language -->
+    <string name="welcome_to_signalbridge">Welcome to SignalBridge</string>
+    <string name="welcome_explanation">Smart call forwarding for your SIM cards. Choose your language to continue.</string>
+    <string name="continue">Continue</string>
+
+    <!-- Capability intro -->
+    <string name="capability_intro_title">What SignalBridge does</string>
+    <string name="capability_intro_subtitle">Configure carrier call forwarding so calls reach you, even when your phone is off or out of coverage.</string>
+    <string name="smart_call_forwarding">Smart Call Forwarding</string>
+    <string name="smart_call_forwarding_body">Redirect incoming calls to an alternate number when you choose.</string>
+    <string name="dual_sim_control">Dual-SIM Control</string>
+    <string name="dual_sim_control_body">Manage forwarding independently for each SIM subscription.</string>
+    <string name="powered_off_protection">Powered-Off Protection</string>
+    <string name="powered_off_protection_body">Forwarding is configured on your carrier\'s network, so it works even when your phone is powered off.</string>
+    <string name="powered_off_note">Powered-off protection must be configured on your mobile operator\'s network before your phone turns off.</string>
+    <string name="learn_how_it_works">Learn How It Works</string>
+    <string name="get_started">Get Started</string>
+    <string name="charges_acknowledged">I understand operator charges may apply</string>
+
+    <!-- Permissions -->
+    <string name="permissions_title">Permissions &amp; capabilities</string>
+    <string name="permissions_subtitle">SignalBridge needs access to your subscriptions and telephony to manage forwarding.</string>
+    <string name="no_permissions_required">No additional permissions are required at this time.</string>
+    <string name="permission_read_phone_state_rationale">SIM / subscription access</string>
+    <string name="permission_read_phone_state_detail">Read your active SIM subscriptions so forwarding can be configured per SIM.</string>
+    <string name="permission_read_phone_numbers_rationale">Telephony functionality</string>
+    <string name="permission_read_phone_numbers_detail">Access phone numbers associated with your subscriptions.</string>
+    <string name="permission_notifications_rationale">Notifications</string>
+    <string name="open_settings">Open Settings</string>
+
+    <!-- SIM discovery -->
+    <string name="sim_discovery_title">Your SIM Cards</string>
+    <string name="sim_discovery_subtitle">SignalBridge has detected the following accessible subscriptions.</string>
+    <string name="discovering_sims">Discovering SIMs&#8230;</string>
+    <string name="no_sim_found">No accessible SIM found</string>
+    <string name="no_sim_found_description">No active telephony subscription was found. Check your SIM and Android settings, then retry.</string>
+    <string name="active">Active</string>
+    <string name="inactive">Inactive</string>
+    <string name="refresh">Refresh</string>
+
+    <!-- SIM selection -->
+    <string name="sim_selection_title">Select SIM(s)</string>
+    <string name="sim_selection_subtitle">Choose one or more SIMs. Forwarding is configured independently per SIM.</string>
+    <string name="no_subscriptions">No subscriptions available</string>
+    <string name="selected_summary">%d selected</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_title">Dashboard</string>
+    <string name="protection_status">Protection status</string>
+    <string name="protection_not_configured">Forwarding is not configured</string>
+    <string name="configure_protection">Configure protection</string>
+    <string name="your_sims">Your SIMs</string>
+    <string name="no_sims">No SIMs available</string>
+    <string name="quick_actions">Quick actions</string>
+    <string name="verify_network">Verify network</string>
+    <string name="recent_activity">Recent activity</string>
+    <string name="no_recent_activity">No recent activity</string>
+    <string name="home">Home</string>
+    <string name="activity">Activity</string>
+
+    <!-- SIM detail -->
+    <string name="sim_not_found">SIM not found</string>
+    <string name="current_forwarding_status">Current forwarding status</string>
+    <string name="no_destination">No destination</string>
+    <string name="manage">Manage</string>
+
+    <!-- Forwarding wizard -->
+    <string name="wizard_select_sim">Select SIM</string>
+    <string name="wizard_select_sim_expl">Choose the SIM to configure.</string>
+    <string name="wizard_choose_destination">Choose destination</string>
+    <string name="wizard_destination_expl">Enter the alternate number that calls will be forwarded to.</string>
+    <string name="wizard_choose_condition">Choose forwarding condition</string>
+    <string name="wizard_choose_policy">Choose restoration behavior</string>
+    <string name="wizard_capability_check">Capability check</string>
+    <string name="wizard_capability_expl">The app verifies API availability, permissions, and carrier support before applying.</string>
+    <string name="wizard_review">Review</string>
+    <string name="wizard_apply">Apply and verify</string>
+    <string name="wizard_complete">Complete</string>
+    <string name="applying_configuration">Applying configuration&#8230;</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+    <string name="done">Done</string>
+
+    <!-- Destination picker -->
+    <string name="destination_picker_title">Destination number</string>
+    <string name="phone_number">Phone number</string>
+    <string name="formatted_">Formatted: %s</string>
+    <string name="saved_destinations">Saved destinations</string>
+    <string name="no_saved_destinations">No saved destinations</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+
+    <!-- Forwarding conditions -->
+    <string name="condition_unconditional">Always forward</string>
+    <string name="condition_unconditional_description">All calls are redirected. Your SIM may not receive calls normally.</string>
+    <string name="condition_unreachable">When unreachable</string>
+    <string name="condition_unreachable_description">Calls are redirected when your phone is off or out of coverage.</string>
+    <string name="condition_busy">When busy</string>
+    <string name="condition_busy_description">Calls are redirected when your line is busy.</string>
+    <string name="condition_unanswered">When unanswered</string>
+    <string name="condition_unanswered_description">Calls are redirected if you do not answer in time.</string>
+
+    <!-- Recovery policy -->
+    <string name="policy_preserve_network">Preserve network settings</string>
+    <string name="policy_preserve_network_description">Never change the carrier rule automatically after boot.</string>
+    <string name="policy_reconcile">Reconcile with saved profile</string>
+    <string name="policy_reconcile_description">Compare network state with your saved profile and correct supported differences.</string>
+    <string name="policy_restore_normal">Restore normal-use policy</string>
+    <string name="policy_restore_normal_description">Apply a previously approved policy when the device is ready.</string>
+    <string name="policy_manual">Manual recovery</string>
+    <string name="policy_manual_description">Notify you and wait for your confirmation.</string>
+
+    <!-- Condition details -->
+    <string name="condition_details_title">Forwarding condition</string>
+    <string name="enabled">Enabled</string>
+    <string name="disabled">Disabled</string>
+    <string name="verified">Verified</string>
+    <string name="pending">Pending</string>
+    <string name="unknown">Unknown</string>
+    <string name="unsupported">Unsupported</string>
+    <string name="error">Error</string>
+    <string name="done">Done</string>
+
+    <!-- Quick control -->
+    <string name="quick_control_title">Quick forwarding control</string>
+    <string name="quick_control_warning">Unconditional forwarding redirects every incoming call. Confirm before enabling.</string>
+    <string name="destination_number">Destination number</string>
+    <string name="activate">Activate</string>
+    <string name="deactivate">Deactivate</string>
+    <string name="operation_in_progress">Operation in progress&#8230;</string>
+
+    <!-- Smart protection -->
+    <string name="smart_protection_title">Smart protection mode</string>
+    <string name="smart_protection_subtitle">Combine unreachable, busy, and unanswered forwarding to protect your line.</string>
+    <string name="readiness_checklist">Readiness checklist</string>
+    <string name="unreachable_configured">Unreachable forwarding configured</string>
+    <string name="unreachable_not_configured">Unreachable forwarding not configured</string>
+    <string name="enable_protection">Enable protection</string>
+    <string name="protection_incomplete">Complete the checklist before enabling protection.</string>
+
+    <!-- Profiles -->
+    <string name="profiles_title">Forwarding profiles</string>
+    <string name="create_profile">Create profile</string>
+    <string name="edit_profile">Edit profile</string>
+    <string name="no_profiles">No profiles</string>
+    <string name="no_profiles_description">Create a profile to save a forwarding configuration.</string>
+    <string name="set_default">Set default</string>
+    <string name="delete">Delete</string>
+    <string name="profile_name">Profile name</string>
+    <string name="profile_description_optional">Description (optional)</string>
+    <string name="recovery_policy">Recovery policy</string>
+    <string name="profile_name_required">Profile name is required</string>
+
+    <!-- Diagnostics -->
+    <string name="diagnostics_title">Diagnostics</string>
+    <string name="running_checks">Running checks&#8230;</string>
+    <string name="run_diagnostics_to_begin">Run diagnostics to check device, SIM, permissions, and carrier readiness.</string>
+    <string name="run_diagnostics">Run diagnostics</string>
+    <string name="diag_telephony_capable">Telephony capable</string>
+    <string name="diag_telephony_capable_expl">The device supports telephony services.</string>
+    <string name="diag_sim_subscription">SIM subscription</string>
+    <string name="diag_sim_subscription_expl">At least one active subscription is accessible.</string>
+    <string name="diag_permissions">Permissions</string>
+    <string name="diag_permissions_expl">Required permissions are granted.</string>
+    <string name="diag_carrier_support">Carrier support</string>
+    <string name="diag_carrier_support_expl">Carrier forwarding support is recorded as unverified.</string>
+    <string name="diag_background_recovery">Background recovery</string>
+    <string name="diag_background_recovery_expl">Boot recovery is registered.</string>
+    <string name="diag_action_check_sim_settings">Check SIM settings in Android.</string>
+    <string name="diag_action_grant_permissions">Grant required permissions.</string>
+    <string name="diag_action_view_carrier_instructions">View carrier-specific instructions.</string>
+
+    <!-- History -->
+    <string name="history_title">Operation history</string>
+    <string name="no_history">No history</string>
+    <string name="no_history_description">Forwarding operations will appear here.</string>
+    <string name="clear_history">Clear history</string>
+
+    <!-- Notifications -->
+    <string name="notifications_title">Notifications</string>
+    <string name="no_notifications">No notifications</string>
+    <string name="no_notifications_description">Important forwarding events appear here.</string>
+    <string name="notification_event">Forwarding event</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="appearance">Appearance</string>
+    <string name="language">Language</string>
+    <string name="theme">Theme</string>
+    <string name="forwarding">Forwarding</string>
+    <string name="default_recovery_policy">Default recovery policy</string>
+    <string name="privacy">Privacy</string>
+    <string name="clear_history">Clear history</string>
+    <string name="delete_profiles">Delete saved profiles</string>
+    <string name="support">Support</string>
+    <string name="about">About</string>
+
+    <!-- Language settings -->
+    <string name="language_settings_title">Language</string>
+    <string name="language_en">English</string>
+    <string name="language_bn">বাংলা</string>
+
+    <!-- Theme settings -->
+    <string name="theme_settings_title">Theme</string>
+    <string name="theme_system">System default</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+
+    <!-- Permission recovery -->
+    <string name="permission_recovery_title">Permission recovery</string>
+
+    <!-- Carrier instructions -->
+    <string name="carrier_instructions_expl">Follow your operator\'s steps to configure forwarding on the network.</string>
+    <string name="procedure_unverified">This procedure is unverified &#8212; confirm with your carrier.</string>
+
+    <!-- Troubleshooting -->
+    <string name="troubleshooting_title">Troubleshooting</string>
+
+    <!-- About -->
+    <string name="developed_by">Developed by %s</string>
+    <string name="contact_email">Contact: %s</string>
+
+    <!-- Privacy -->
+    <string name="privacy_title">Privacy &amp; legal</string>
+    <string name="data_collected">Data collected</string>
+    <string name="data_stored_locally">Data stored locally</string>
+    <string name="carrier_operations">Carrier operations</string>
+    <string name="no_analytics">No analytics are collected by default.</string>
+    <string name="profiles_and_history_local">Profiles and history are stored locally on your device only.</string>
+    <string name="carrier_manages_forwarding">Call forwarding is managed by your carrier; deleting local data does not disable network forwarding.</string>
+    <string name="clear_local_data">Clear local data</string>
+
+    <!-- Setup completion -->
+    <string name="setup_complete_title">Setup complete</string>
+    <string name="setup_complete_summary">Your forwarding configuration is ready.</string>
+    <string name="go_to_dashboard">Go to Dashboard</string>
+</resources>

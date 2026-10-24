@@ -1,0 +1,246 @@
+<resources>
+    <!-- App identity -->
+    <string name="app_name">সিগন্যালব্রিজ</string>
+
+    <!-- Splash -->
+    <string name="splash_tagline">আপনার কল, সব সময় যোগাযোগে।</string>
+    <string name="initialization_failed">শুরু করা যায়নি</string>
+    <string name="retry">পুনরায় চেষ্টা করুন</string>
+
+    <!-- Welcome / language -->
+    <string name="welcome_to_signalbridge">সিগন্যালব্রিজে স্বাগতম</string>
+    <string name="welcome_explanation">আপনার সিম কার্ডের জন্য স্মার্ট কল ফরওয়ার্ডিং। আপনার ভাষা বেছে নিয়ে চালু করুন।</string>
+    <string name="continue">চালু করুন</string>
+
+    <!-- Capability intro -->
+    <string name="capability_intro_title">সিগন্যালব্রিজ কী কাজ করে</string>
+    <string name="capability_intro_subtitle">ক্যারিয়ারের কল ফরওয়ার্ডিং সেট আপ করুন, যেন ফোন বন্ধ বা কভারেজ বাইরে থাকলেও কল পান।</string>
+    <string name="smart_call_forwarding">স্মার্ট কল ফরওয়ার্ডিং</string>
+    <string name="smart_call_forwarding_body">আগমন কল একটি বিকল্প নম্বরে পাঠিয়ে দিন।</string>
+    <string name="dual_sim_control">দুই সিম নিয়ন্ত্রণ</string>
+    <string name="dual_sim_control_body">প্রতিটি সিম সাবস্ক্রিপশনের জন্য আলাদা ফরওয়ার্ডিং সেট আপ করুন।</string>
+    <string name="powered_off_protection">বंद ফোন সুরক্ষা</string>
+    <string name="powered_off_protection_body">ফরওয়ার্ডিং আপনার অপারেটরের নেটওয়ার্কে সেট আপ করা থাকে, তাই ফোন বন্ধ থাকলেও কাজ করে।</string>
+    <string name="powered_off_note">ফোন বন্ধ হওয়ার আগেই আপনার মোবাইল অপারেটরের নেটওয়ার্কে সুরক্ষা সেট আপ করতে হবে।</string>
+    <string name="learn_how_it_works">কিভাবে কাজ করে তা জানুন</string>
+    <string name="get_started">শুরু করুন</string>
+    <string name="charges_acknowledged">আমি বুঝেছি অপারেটর চার্জ লাগতে পারে</string>
+
+    <!-- Permissions -->
+    <string name="permissions_title">অনুমতি ও সক্ষমতা</string>
+    <string name="permissions_subtitle">ফরওয়ার্ডিং পরিচালনার জন্য সিগন্যালব্রিজকে আপনার সাবস্ক্রিপশন ও টেলিফোনি অ্যাক্সেসের প্রয়োজন।</string>
+    <string name="no_permissions_required">এই মুহুর্তে অতিরিক্ত অনুমতির প্রয়োজন নেই।</string>
+    <string name="permission_read_phone_state_rationale">সিম / সাবস্ক্রিপশন অ্যাক্সেস</string>
+    <string name="permission_read_phone_state_detail">সক্রিয় সিম সাবস্ক্রিপশন দেখতে পারবে, যাতে প্রতিটি সিমের জন্য ফরওয়ার্ডিং সেট করা যায়।</string>
+    <string name="permission_read_phone_numbers_rationale">টেলিফোনি কার্যকারিতা</string>
+    <string name="permission_read_phone_numbers_detail">আপনার সাবস্ক্রিপশনের সাথে জড়িত ফোন নম্বর দেখার অনুমতি।</string>
+    <string name="permission_notifications_rationale">নোটিফিকেশন</string>
+    <string name="open_settings">সেটিংস খুলুন</string>
+
+    <!-- SIM discovery -->
+    <string name="sim_discovery_title">আপনার সিম কার্ড</string>
+    <string name="sim_discovery_subtitle">সিগন্যালব্রিজ নিচের অ্যাক্সেসযোগ্য সাবস্ক্রিপশনগুলো খুঁজে পেয়েছে।</string>
+    <string name="discovering_sims">সিম খোঁজা চলছে…</string>
+    <string name="no_sim_found">কোন অ্যাক্সেসযোগ্য সিম পাওয়া যায়নি</string>
+    <string name="no_sim_found_description">কোন সক্রিয় টেলিফোনি সাবস্ক্রিপশন পাওয়া যায়নি। সিম এবং অ্যান্ড্রয়েড সেটিংস পরীক্ষা করে আবার চেষ্টা করুন।</string>
+    <string name="active">সক্রিয়</string>
+    <string name="inactive">নিষ্ক্রিয়</string>
+    <string name="refresh">রিফ্রেশ করুন</string>
+
+    <!-- SIM selection -->
+    <string name="sim_selection_title">সিম বেছে নিন</string>
+    <string name="sim_selection_subtitle">এক বা একাধিক সিম বেছে নিন। প্রতিটি সিমের জন্য ফরওয়ার্ডিং আলাদাভাবে সেট করা হবে।</string>
+    <string name="no_subscriptions">কোন সাবস্ক্রিপশন নেই</string>
+    <string name="selected_summary">%dটি বেছে নেওয়া হয়েছে</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_title">ড্যাশবোর্ড</string>
+    <string name="protection_status">সুরক্ষার অবস্থা</string>
+    <string name="protection_not_configured">ফরওয়ার্ডিং সেট আপ করা হয়নি</string>
+    <string name="configure_protection">সুরক্ষা সেট আপ করুন</string>
+    <string name="your_sims">আপনার সিম</string>
+    <string name="no_sims">কোন সিম নেই</string>
+    <string name="quick_actions">দ্রুত কর্ম</string>
+    <string name="verify_network">নেটওয়ার্ক যাচাই করুন</string>
+    <string name="recent_activity">সাম্প্রতিক কার্যক্রম</string>
+    <string name="no_recent_activity">কোন সাম্প্রতিক কার্যক্রম নেই</string>
+    <string name="home">হোম</string>
+    <string name="activity">কার্যক্রম</string>
+
+    <!-- SIM detail -->
+    <string name="sim_not_found">সিম পাওয়া যায়নি</string>
+    <string name="current_forwarding_status">বর্তমান ফরওয়ার্ডিং অবস্থা</string>
+    <string name="no_destination">কোন গন্তব্য নেই</string>
+    <string name="manage">পরিচালনা করুন</string>
+
+    <!-- Forwarding wizard -->
+    <string name="wizard_select_sim">সিম বেছে নিন</string>
+    <string name="wizard_select_sim_expl">কনফিগার করার জন্য একটি সিম বেছে নিন।</string>
+    <string name="wizard_choose_destination">গন্তব্য নম্বর বেছে নিন</string>
+    <string name="wizard_destination_expl">বিকল্প নম্বর লিখুন যেখানে কল পাঠানো হবে।</string>
+    <string name="wizard_choose_condition">ফরওয়ার্ডিং শর্ত বেছে নিন</string>
+    <string name="wizard_choose_policy">পুনরুদ্ধার পদ্ধতি বেছে নিন</string>
+    <string name="wizard_capability_check">ক্ষমতা পরীক্ষা</string>
+    <string name="wizard_capability_expl">প্রয়োগ করার আগে অ্যাপ এপিআই, অনুমতি ও অপারেটর সহায়তা যাচাই করে।</string>
+    <string name="wizard_review">পর্যালোচনা</string>
+    <string name="wizard_apply">প্রয়োগ এবং যাচাই</string>
+    <string name="wizard_complete">সম্পূর্ণ</string>
+    <string name="applying_configuration">কনফিগারেশন প্রয়োগ করা চলছে…</string>
+    <string name="back">পেছনে</string>
+    <string name="next">পরবর্তী</string>
+    <string name="done">সমাপ্ত</string>
+
+    <!-- Destination picker -->
+    <string name="destination_picker_title">গন্তব্য নম্বর</string>
+    <string name="phone_number">ফোন নম্বর</string>
+    <string name="formatted_">স्वरূপ: %s</string>
+    <string name="saved_destinations">সংরক্ষিত গন্তব্য</string>
+    <string name="no_saved_destinations">কোন সংরক্ষিত গন্তব্য নেই</string>
+    <string name="cancel">বাতিল করুন</string>
+    <string name="save">সেভ করুন</string>
+
+    <!-- Forwarding conditions -->
+    <string name="condition_unconditional">সবসময় ফরওয়ার্ড করুন</string>
+    <string name="condition_unconditional_description">সব কল রিডাইরেক্ট করা হবে। আপনার সিম সাধারণ কল পাওয়াও বন্ধ হতে পারে।</string>
+    <string name="condition_unreachable">অযোগ্য থাকলে</string>
+    <string name="condition_unreachable_description">ফোন বন্ধ বা কভারেজ বাইরে থাকলে কল রিডাইরেক্ট করা হয়।</string>
+    <string name="condition_busy">বিজি থাকলে</string>
+    <string name="condition_busy_description">আপনার লাইন ব্যস্ত থাকলে কল রিডাইরেক্ট করা হয়।</string>
+    <string name="condition_unanswered">উত্তর না দিলে</string>
+    <string name="condition_unanswered_description">সময়সীমার মধ্যে উত্তর না দিলে কল রিডাইরেক্ট করা হয়।</string>
+
+    <!-- Recovery policy -->
+    <string name="policy_preserve_network">নেটওয়ার্ক সেটিংস অপরিবর্তিত রাখুন</string>
+    <string name="policy_preserve_network_description">বুটের পর অপারেটরের নিয়ন্ত্রণ স্বয়ংক্রিয়ভাবে পরিবর্তন করবেন না।</string>
+    <string name="policy_reconcile">সংরক্ষিত প্রোফাইলের সাথে মিলিয়ে নিন</string>
+    <string name="policy_reconcile_description">নেটওয়ার্ক অবস্থা আপনার সংরক্ষিত প্রোফাইলের সাথে তুলনা করে সমসাময়িক সমস্যা ঠিক করুন।</string>
+    <string name="policy_restore_normal">সাধারণ ব্যবহার নীতি ফিরিয়ে আনুন</string>
+    <string name="policy_restore_normal_description">ডিভাইস প্রস্তুত থাকলে আগে অনুমোদিত নীতি প্রয়োগ করুন।</string>
+    <string name="policy_manual">হাতে হাতে পুনরুদ্ধার</string>
+    <string name="policy_manual_description">আপনাকে জানিয়ে আপনার নিশ্চিতকরণের জন্য অপেক্ষা করবে।</string>
+
+    <!-- Condition details -->
+    <string name="condition_details_title">ফরওয়ার্ডিং শর্ত</string>
+    <string name="enabled">সক্রিয়</string>
+    <string name="disabled">নিষ্ক্রিয়</string>
+    <string name="verified">যাচাইকৃত</string>
+    <string name="pending">অপেক্ষারত</string>
+    <string name="unknown">অজানা</string>
+    <string name="unsupported">অসমর্থিত</string>
+    <string name="error">ভুল</string>
+    <string name="done">সমाप्त</string>
+
+    <!-- Quick control -->
+    <string name="quick_control_title">দ্রুত ফরওয়ার্ডিং নিয়ন্ত্রণ</string>
+    <string name="quick_control_warning">অস্বর্তশর্ত ফরওয়ার্ডিং প্রতিটি আগমন কল রিডাইরেক্ট করে। সক্রিয় করার আগে নিশ্চিত হন।</string>
+    <string name="destination_number">গন্তব্য নম্বর</string>
+    <string name="activate">সক্রিয় করুন</string>
+    <string name="deactivate">বন্ধ করুন</string>
+    <string name="operation_in_progress">কার্যক্রম চলছে…</string>
+
+    <!-- Smart protection -->
+    <string name="smart_protection_title">স্মার্ট সুরক্ষা মোড</string>
+    <string name="smart_protection_subtitle">অযোগ্য, ব্যস্ত এবং উত্তর না দিলে ফরওয়ার্ডিং যৌথভাবে ব্যবহার করে আপনার লাইন রক্ষা করুন।</string>
+    <string name="readiness_checklist">প্রস্তুতির তালিকা</string>
+    <string name="unreachable_configured">অযোগ্য ফরওয়ার্ডিং সেট আপ করা হয়েছে</string>
+    <string name="unreachable_not_configured">অযোগ্য ফরওয়ার্ডিং সেট আপ করা হয়নি</string>
+    <string name="enable_protection">সুরক্ষা সক্রিয় করুন</string>
+    <string name="protection_incomplete">সুরক্ষা সক্রিয় করার আগে তালিকাটি সম্পূর্ণ করুন।</string>
+
+    <!-- Profiles -->
+    <string name="profiles_title">ফরওয়ার্ডিং প্রোফাইল</string>
+    <string name="create_profile">প্রোফাইল তৈরি করুন</string>
+    <string name="edit_profile">প্রোফাইল সম্পাদনা করুন</string>
+    <string name="no_profiles">কোন প্রোফাইল নেই</string>
+    <string name="no_profiles_description">একটি ফরওয়ার্ডিং কনফিগারেশন সেভ করতে প্রোফাইল তৈরি করুন।</string>
+    <string name="set_default">ডিফল্ট সেট করুন</string>
+    <string name="delete">মুছে ফেলুন</string>
+    <string name="profile_name">প্রোফাইলের নাম</string>
+    <string name="profile_description_optional">বর্ণনা (ঐচ্ছিক)</string>
+    <string name="recovery_policy">পুনরুদ্ধার নীতি</string>
+    <string name="profile_name_required">প্রোফাইলের নাম প্রয়োজন</string>
+
+    <!-- Diagnostics -->
+    <string name="diagnostics_title">ডায়াগনস্টিকস</string>
+    <string name="running_checks">পরীক্ষা চলছে…</string>
+    <string name="run_diagnostics_to_begin">ডিভাইস, সিম, অনুমতি ও অপারেটর প্রস্তুত উত্তর যাচাই করতে ডায়াগনস্টিকস চালু করুন।</string>
+    <string name="run_diagnostics">ডায়াগনস্টিকস চালু করুন</string>
+    <string name="diag_telephony_capable">টেলিফোনি সক্ষম</string>
+    <string name="diag_telephony_capable_expl">ডিভাইস টেলিফোনি পরিষেবা সাপোর্ট করে।</string>
+    <string name="diag_sim_subscription">সিম সাবস্ক্রিপশন</string>
+    <string name="diag_sim_subscription_expl">অন wenigstens একটি সক্রিয় সাবস্ক্রিপশন অ্যাক্সেসযোগ্য।</string>
+    <string name="diag_permissions">অনুমতি</string>
+    <string name="diag_permissions_expl">প্রয়োজনীয় অনুমতি দেওয়া আছে।</string>
+    <string name="diag_carrier_support">অপারেটর সহায়তা</string>
+    <string name="diag_carrier_support_expl">অপারেটর ফরওয়ার্ডিং সহায়তা যাচাই হয়নি।</string>
+    <string name="diag_background_recovery">পটভূমি পুনরুদ্ধার</string>
+    <string name="diag_background_recovery_expl">বুট পুনরুদ্ধার নিবন্ধিত আছে।</string>
+    <string name="diag_action_check_sim_settings">অ্যান্ড্রয়েড সেটিংসে সিম পরীক্ষা করুন।</string>
+    <string name="diag_action_grant_permissions">অনুমতি দিন।</string>
+    <string name="diag_action_view_carrier_instructions">অপারেটর নির্দেশনা দেখুন।</string>
+
+    <!-- History -->
+    <string name="history_title">কার্যক্রম ইতিহাস</string>
+    <string name="no_history">কোন ইতিহাস নেই</string>
+    <string name="no_history_description">ফরওয়ার্ডিং কার্যক্রম এখানে আসবে।</string>
+    <string name="clear_history">ইতিহাস মুছে ফেলুন</string>
+
+    <!-- Notifications -->
+    <string name="notifications_title">নোটিফিকেশন</string>
+    <string name="no_notifications">কোন নোটিফিকেশন নেই</string>
+    <string name="no_notifications_description">গুরুত্বপূর্ণ ফরওয়ার্ডিং ঘটনা এখানে আসবে।</string>
+    <string name="notification_event">ফরওয়ার্ডিং ঘটনা</string>
+
+    <!-- Settings -->
+    <string name="settings_title">সেটিংস</string>
+    <string name="appearance">দেখappelijk</string>
+    <string name="language">ভাষা</string>
+    <string name="theme">থিম</string>
+    <string name="forwarding">ফরওয়ার্ডিং</string>
+    <string name="default_recovery_policy">ডিফল্ট পুনরুদ্ধার নীতি</string>
+    <string name="privacy">গোপনীয়তা</string>
+    <string name="clear_history">ইতিহাস মুছে ফেলুন</string>
+    <string name="delete_profiles">সেভ করা প্রোফাইল মুছে ফেলুন</string>
+    <string name="support">সহায়তা</string>
+    <string name="about">সম্পর্কে</string>
+
+    <!-- Language settings -->
+    <string name="language_settings_title">ভাষা</string>
+    <string name="language_en">ইংরেজি</string>
+    <string name="language_bn">বাংলা</string>
+
+    <!-- Theme settings -->
+    <string name="theme_settings_title">থিম</string>
+    <string name="theme_system">সিস্টেম ডিফল্ট</string>
+    <string name="theme_light">লাইট</string>
+    <string name="theme_dark">ডার্ক</string>
+
+    <!-- Permission recovery -->
+    <string name="permission_recovery_title">অনুমতি পুনরুদ্ধার</string>
+
+    <!-- Carrier instructions -->
+    <string name="carrier_instructions_expl">নেটওয়ার্কে ফরওয়ার্ডিং সেট আপ করতে আপনার অপারেটরের ধাপগুলো অনুসরণ করুন।</string>
+    <string name="procedure_unverified">এই পদ্ধতিটি যাচাই করা হয়নি &#8212; আপনার অপারেটরের সাথে নিশ্চিত করুন।</string>
+
+    <!-- Troubleshooting -->
+    <string name="troubleshooting_title">সমস্যা সমাধান</string>
+
+    <!-- About -->
+    <string name="developed_by">শোধন খান দ্বারা তৈরি</string>
+    <string name="contact_email">যোগাযোগ: %s</string>
+
+    <!-- Privacy -->
+    <string name="privacy_title">গোপনীয়তা ও আইনি তথ্য</string>
+    <string name="data_collected">তথ্য সংগ্রহ</string>
+    <string name="data_stored_locally">স্বয়ংক্রিয়ভাবে ডিভাইসে সংরক্ষিত</string>
+    <string name="carrier_operations">অপারেটর কার্যক্রম</string>
+    <string name="no_analytics">ডিফল্টভাবে কোন অ্যানালিটিকস সংগ্রহ করা হয় না।</string>
+    <string name="profiles_and_history_local">প্রোফাইল ও ইতিহাস শুধুমাত্র আপনার ডিভাইসে সংরক্ষিত থাকে।</string>
+    <string name="carrier_manages_forwarding">কল ফরওয়ার্ডিং আপনার অপারেটর দ্বারা পরিচালিত। ডিভাইসে সংরক্ষিত তথ্য মুছে ফেললে নেটওয়ার্ক ফরওয়ার্ডিং বন্ধ হয় না।</string>
+    <string name="clear_local_data">ডিভাইসে সংরক্ষিত তথ্য মুছে ফেলুন</string>
+
+    <!-- Setup completion -->
+    <string name="setup_complete_title">সেটআপ সম্পূর্ণ</string>
+    <string name="setup_complete_summary">আপনার ফরওয়ার্ডিং কনফিগারেশন প্রস্তুত।</string>
+    <string name="go_to_dashboard">ড্যাশবোর্ডে যান</string>
+</resources>
