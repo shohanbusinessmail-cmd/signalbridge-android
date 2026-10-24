@@ -1,0 +1,75 @@
+name: CI
+
+on:
+  push:
+    branches: [main, arena/**]
+  pull_request:
+    branches: [main, arena/**]
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Validate Gradle wrapper
+        uses: gradle/actions/wrapper-validation@v3
+
+      - name: Restore Gradle cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*') }}
+          restore-keys: |
+            ${{ runner.os }}-gradle-
+
+      - name: Resolve dependencies
+        run: ./gradlew --no-daemon androidDependencies
+
+      - name: Compile debug
+        run: ./gradlew --no-daemon assembleDebug
+
+      - name: Run unit tests
+        run: ./gradlew --no-daemon testDebugUnitTest
+
+      - name: Run lint
+        run: ./gradlew --no-daemon lintDebug
+
+      - name: Build release APK (unsigned if no keystore)
+        run: ./gradlew --no-daemon assembleRelease || true
+
+      - name: Verify APK
+        run: |
+          APK=$(ls app/build/outputs/apk/*/*.apk | head -1)
+          test -s "$APK" && echo "APK present: $APK" || { echo "APK missing or empty"; exit 1; }
+          unzip -p "$APK" AndroidManifest.xml > /dev/null && echo "Valid APK"
+
+      - name: Publish test reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-reports
+          path: app/build/reports/tests/testDebugUnitTestValues/
+          retention-days: 7
+
+      - name: Publish APK artifact
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: signalbridge-apk
+          path: app/build/outputs/apk/**/*.apk
+          retention-days: 30
